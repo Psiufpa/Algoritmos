@@ -1,0 +1,23 @@
+algoritmo "lista 3 - problema 08"
+
+
+var
+
+  i: inteiro
+  temp: real
+
+
+inicio
+
+
+para i de 50 ate 150 faca
+
+  temp <- (5/9)*(i-32)
+  escreval (i, " ºF = ",temp:5:2," ºC")
+     
+
+fimpara
+
+
+
+fimalgoritmo

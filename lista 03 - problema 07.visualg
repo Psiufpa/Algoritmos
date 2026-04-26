@@ -1,0 +1,38 @@
+algoritmo "lista 3 - problema 07"
+
+
+var
+
+  num1, num2: inteiro
+  soma, i: inteiro
+
+
+inicio
+
+leia(num1)
+leia(num2) 
+soma <- 0
+
+se num1 > num2 entao
+
+  escreval("intervalo de valores inválido")
+
+senao
+
+  para i de num1 ate num2 faca 
+  
+    se i mod 2 <> 0 entao
+    
+      soma <- soma + i
+    
+    fimse
+
+  fimpara
+
+  escreval(soma)
+
+fimse
+
+
+
+fimalgoritmo
