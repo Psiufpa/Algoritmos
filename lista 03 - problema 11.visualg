@@ -1,0 +1,25 @@
+algoritmo "lista 3 - problema 11"
+
+var
+  dado1, dado2: inteiro
+
+inicio
+
+  para dado1 de 1 ate 6 faca
+
+    para dado2 de 1 ate 6 faca
+
+      se dado1 + dado2 = 7 entao
+      
+        escreval("dado1 ( ",dado1, " ) + dado2 ( ",dado2, " ) = 7")
+
+      fimse
+
+    fimpara
+
+
+  fimpara
+
+
+
+fimalgoritmo

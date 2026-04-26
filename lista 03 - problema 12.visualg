@@ -1,0 +1,24 @@
+algoritmo "lista 3 - problema 12"
+
+var
+  num1, num2: inteiro
+  quociente, resto: inteiro
+
+inicio
+
+  leia(num1)
+  leia(num2)
+
+  enquanto num1 >= num2 faca
+
+    num1 <- num1 - num2
+    quociente <- quociente + 1
+
+  fimenquanto
+
+resto <- num1
+
+escreval(quociente)
+escreval(resto)
+
+fimalgoritmo

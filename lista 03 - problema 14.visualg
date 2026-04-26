@@ -1,0 +1,56 @@
+algoritmo "lista 03 - problema 14"
+
+var
+  
+  dia: inteiro
+  valor, soma: real
+  categoria: caractere
+
+inicio
+
+leia(valor)
+soma <- 0
+
+enquanto dia <> -1 faca
+
+  leia(dia)
+  leia(categoria)
+
+  se dia >= 6 e dia <= 13 entao
+
+    escolha categoria
+
+      caso "E"
+
+        soma <- soma + valor * 0.8
+  
+      caso "A"
+
+       soma <- soma + valor * 0.9
+
+    fimescolha
+  
+  fimse
+
+  se dia >= 14 e dia <= 31 entao
+
+    escolha categoria
+
+      caso "E"
+
+        soma <- soma + valor * 0.9
+  
+      caso "A"
+
+        soma <- soma + valor * 0.95
+
+      fimescolha
+
+  fimse
+
+
+fimenquanto
+
+escreval(soma)
+
+fimalgoritmo
