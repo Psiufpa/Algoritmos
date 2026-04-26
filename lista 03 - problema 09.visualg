@@ -1,0 +1,37 @@
+algoritmo "lista 3 - problema 08"
+
+
+var
+
+  n: inteiro
+  senha: caractere
+
+
+inicio
+
+leia(n)
+senha <- ""
+senha <- senha + n
+
+repita 
+
+  se n mod 2 = 0 entao
+
+    n <- n/2
+    senha <- senha + n
+  
+  senao
+
+    n <- 3*n+1
+    senha <- senha + n
+  
+  fimse
+
+
+ate n = 1
+
+escreval(senha)
+
+
+
+fimalgoritmo
