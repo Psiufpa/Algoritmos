@@ -1,0 +1,24 @@
+algoritmo "lista 3 - problema 01"
+// se os numeros forem todos iguais, a média é igual ao numero
+// se os numeros forem 1, 5, 97, 0 , -3 , o resultado é 20
+// passo a passo abaixo
+// aqui usei 3 variaveis, mas dependendo da linguagem, talvez dê pra fazer até com apenas uma variável
+var
+  
+  numero: inteiro
+  soma, i: inteiro
+  
+
+inicio
+
+soma <- 0
+para i de 1 ate 5 faca
+
+  leia(numero)
+  soma <- soma + numero
+
+fimpara
+
+escreva(soma/5)
+
+fimalgoritmo

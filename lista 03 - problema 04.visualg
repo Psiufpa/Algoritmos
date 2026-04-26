@@ -1,0 +1,28 @@
+algoritmo "lista 3 - problema 04"
+
+// questao exatamente igual a questao 02
+
+// queremos que o programe receba um numero N e calcule a multiplicacao de todos os numeros de 1 ate N (basicamente calcular o fatorial de N)
+// entrada: 5 / saida: 120
+// variaveis: usei 3 neste caso, mas poderia ate usar menos dependendo da linguagem e da maneira de estruturar o codigo
+// usei uma variavel contadora (i) e uma acumuladora (fatorial)
+
+var
+
+  n: inteiro
+  fatorial: inteiro // variavel acumuladora
+  i: inteiro // variavel contadora
+
+inicio
+
+  leia(n)
+  fatorial <-1
+  para i de 1 ate n faca
+
+    fatorial <- fatorial * i
+
+  fimpara
+
+  escreva(fatorial)
+
+fimalgoritmo
