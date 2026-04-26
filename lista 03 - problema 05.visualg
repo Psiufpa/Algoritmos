@@ -1,0 +1,27 @@
+algoritmo "lista 3 - problema 05"
+
+// resposta: 650
+
+var
+
+  
+  soma: inteiro 
+  i: inteiro
+
+inicio
+
+  
+  soma <-0
+  
+  para i de 1 ate 50 faca
+    se i mod 2 = 0 entao 
+
+      soma <- soma + i
+    
+    fimse
+
+  fimpara
+
+  escreva(soma)
+
+fimalgoritmo
