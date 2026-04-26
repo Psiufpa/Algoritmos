@@ -1,0 +1,24 @@
+algoritmo "lista 3 - problema 15"
+
+var
+  razao, resultado: real
+  termos, i : inteiro
+inicio
+
+  leia(razao)
+  leia(termos)
+
+  resultado <- 1
+  escreval(resultado)
+  
+  para i de 2 ate termos faca
+
+    resultado <- resultado * razao
+    escreval(resultado)
+
+
+  fimpara
+
+
+
+fimalgoritmo
