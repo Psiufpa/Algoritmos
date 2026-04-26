@@ -1,24 +1,33 @@
 algoritmo "lista 3 - problema 11"
 
 var
-  dado1, dado2: inteiro
+  
+  soma, multiplicacao, num1, num2, i: inteiro
+  
 
 inicio
+soma <- 0
+multiplicacao <- 1
 
-  para dado1 de 1 ate 6 faca
+leia(num1)
+leia(num2)
 
-    para dado2 de 1 ate 6 faca
+para i de num1 ate num2 faca
 
-      se dado1 + dado2 = 7 entao
-      
-        escreval("dado1 ( ",dado1, " ) + dado2 ( ",dado2, " ) = 7")
+  se i mod 2 = 0 entao
 
-      fimse
+    soma <- soma + i
+  
+  senao
 
-    fimpara
+    multiplicacao <- multiplicacao * i
 
+  fimse
 
-  fimpara
+fimpara
+
+escreval("Soma: ", soma)
+escreval("Multiplicação: ", multiplicacao)
 
 
 
