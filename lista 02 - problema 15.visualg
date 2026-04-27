@@ -1,0 +1,112 @@
+algoritmo "questao 15 - horoscopo"
+
+var
+  dia: inteiro
+  mes: inteiro
+
+inicio
+
+
+leia (dia)
+leia (mes)
+
+
+se mes=1 entao
+    se dia<20 entao
+        escreval ("capricornio")
+    senao
+        escreval ("aquario")
+    fimse
+
+fimse
+
+se mes=2 entao
+    se dia<19 entao
+        escreval ("aquario")
+    senao
+        escreval ("peixes")
+    fimse
+fimse
+
+se mes=3 entao
+    se dia<2 entao
+        escreval ("peixes")
+    senao
+        escreval ("aries")
+    fimse
+fimse
+
+se mes=4 entao
+    se dia<21 entao
+       escreval ("aries")
+    senao
+        escreval ("touro")
+    fimse
+fimse
+
+se mes=5 entao
+    se dia<21 entao
+        escreval ("touro")
+    senao
+        escreval ("gemeos")
+    fimse
+fimse
+
+se mes=6 entao
+    se dia<21 entao
+        escreval ("gemeos")
+    senao
+        escreval ("cancer")
+    fimse
+fimse
+se mes=7 entao
+    se dia<23 entao
+        escreval ("cancer")
+    senao
+        escreval ("leao")
+    fimse
+fimse
+se mes=8 entao
+    se dia<23 entao
+        escreval ("leao")
+    senao
+        escreval ("virgem")
+    fimse
+fimse
+
+se mes=9 entao
+    se dia<23 entao
+        escreval ("virgem")
+    senao
+        escreval ("libra")
+    fimse
+fimse
+
+se mes=10 entao
+    se dia<23 entao
+        escreval ("libra")
+    senao
+        escreval ("escorpiao")
+    fimse
+fimse
+
+se mes=11 entao
+    se dia<22 entao
+        escreval ("escorpiao")
+    senao
+        escreval ("sagitario")
+    fimse
+
+fimse
+
+se mes=12 entao
+    se dia<22 entao
+        escreval ("sagitario")
+    
+    senao
+        escreval ("capricornio")
+    
+    fimse
+fimse
+
+fimalgoritmo

@@ -1,0 +1,37 @@
+algoritmo "questao 14 - idades"
+
+var
+  idade_h_1, idade_h_2, idade_m_1, idade_m_2, aux: inteiro
+
+inicio
+
+  escreval("Digite a idade do primeiro homem: ")
+  leia(idade_h_1)
+  escreval("Digite a idade do segundo homem: ")
+  leia(idade_h_2)
+  escreval("Digite a idade da primeira mulher: ")
+  leia(idade_m_1)
+  escreval("Digite a idade da segunda mulher: ")
+  leia(idade_m_2)
+  
+
+  se idade_h_1 < idade_h_2 entao
+    
+    aux <- idade_h_2
+    idade_h_2 <- idade_h_1
+    idade_h_1 <- aux 
+
+  fimse
+
+  se idade_m_1 < idade_m_2 entao
+    
+    aux <- idade_m_2
+    idade_m_2 <- idade_m_1
+    idade_m_1 <- aux 
+
+  fimse
+   
+  escreval("a soma da idade do homem mais velho com a mulher mais nova é: ", idade_h_1+idade_m_2)
+  escreval("o produto da idade do homem mais novo com a mulher mais velha é: ", idade_h_2*idade_m_1)
+
+fimalgoritmo

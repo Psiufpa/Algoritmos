@@ -1,0 +1,60 @@
+algoritmo "Lista 02 - Questão 16"
+
+var
+  
+  aux1: real
+  aux2: caractere
+
+  dia: vetor[1..7] de real
+  semana: vetor[1..7] de caractere
+
+  i: inteiro
+
+inicio
+
+  leia(dia[1])
+  leia(dia[2])
+  leia(dia[3])
+  leia(dia[4])
+  leia(dia[5])
+  leia(dia[6])
+  leia(dia[7])
+
+  semana[1] <- "domingo"
+  semana[2] <- "segunda-feira"
+  semana[3] <- "terca-feira"
+  semana[4] <- "quarta-feira"
+  semana[5] <- "quinta-feira"
+  semana[6] <- "sexta-feira"
+  semana[7] <- "sabado"
+
+  
+  para i de 1 ate 6 faca
+
+    para j de 1 ate 6 faca
+      
+      se dia[j] > dia[i+1] entao
+
+        aux1 <- dia[j]
+        dia[j] <- dia[i+1]
+        dia[i+1] <- aux1
+
+        aux2 <- semana[j]
+        semana[j] <- semana[i+1]
+        semana[i+1] <- aux2
+
+      fimse
+    fimpara
+   
+  fimpara
+
+  // escreval(semana[7])
+  // escreval(dia[7])
+  para i de 1 ate 7 faca
+
+    escreval(semana[i], " ", dia[i])
+
+  fimpara
+
+
+fimalgoritmo
