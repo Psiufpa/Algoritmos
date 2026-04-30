@@ -33,15 +33,15 @@ inicio
 
     para j de 1 ate 6 faca
       
-      se dia[j] > dia[i+1] entao
+      se dia[j] > dia[j+1] entao
 
         aux1 <- dia[j]
-        dia[j] <- dia[i+1]
-        dia[i+1] <- aux1
+        dia[j] <- dia[j+1]
+        dia[j+1] <- aux1
 
         aux2 <- semana[j]
-        semana[j] <- semana[i+1]
-        semana[i+1] <- aux2
+        semana[j] <- semana[j+1]
+        semana[j+1] <- aux2
 
       fimse
     fimpara
