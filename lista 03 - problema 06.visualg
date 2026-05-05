@@ -1,40 +1,37 @@
 algoritmo "lista 03 - problema 06"
 
 var
-   vet: vetor[1..1000] de inteiro
-   i, j, aux: inteiro
-   num: inteiro
-   k: inteiro
+  menor , maior : inteiro 
+  num: inteiro
+  
 
 inicio
 
-   k <- 1
-
-  
+   
    leia(num)
+   menor <- num
+   maior <- num
 
    enquanto num <> -1 faca
-      vet[k] <- num
-      k <- k + 1
       
       leia(num)
+
+      se num > maior entao
+        
+        maior <- num
+      
+      fimse
+      se num < menor e num <> -1 entao
+        
+        menor <- num
+      
+      fimse
+      
+   
    fimenquanto
 
-   para i de 1 ate k-2 faca
-      para j de 1 ate k-2 faca
-         se vet[j] > vet[j+1] entao
-            aux <- vet[j]
-            vet[j] <- vet[j+1]
-            vet[j+1] <- aux
-         fimse
-      fimpara
-   fimpara
-
-   
-   // para i de 1 ate k-1 faca
-   //   escreval(vet[i])
-   // fimpara
-
-  escreval("maior = ", vet[k-1])
-  escreval("menor = ", vet[1])
+     
+  escreval("maior = ", maior)
+  escreval("menor = ", menor)
+  
 fimalgoritmo
