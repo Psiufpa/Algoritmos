@@ -1,0 +1,39 @@
+algoritmo "lista 3 - problema 03"
+
+// queremos que o programe receba um numero e verifique se ele é primo
+// entrada: 5 / saida: 5 é primo
+// variaveis: usei 3 neste caso, mas poderia ate usar menos dependendo da linguagem e da maneira de estruturar o codigo
+// usei uma variavel contadora (i) e uma acumuladora, que talvez até se poderia chamar de sentinela pois ela serve como critério de verificação no final (divisivel)
+
+var
+   numero, i, divisivel: inteiro
+
+inicio
+   
+   leia(numero)
+
+   divisivel <- 0
+
+   
+
+   para i de 3 ate (raizq(numero)+1) faca
+      
+      se numero mod i = 0 entao
+         
+         divisivel <- divisivel + 1
+      
+      fimse
+      i <- i + 2
+
+   fimpara
+
+   se (divisivel = 0) e (numero > 1) ou (numero = 2) entao
+     
+      escreval(numero, " é primo")
+   
+   senao
+
+      escreval(numero, " não é primo")
+   fimse
+
+fimalgoritmo
